@@ -1,0 +1,92 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+image_describer.db
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Vite
+dist/
+dist-ssr/
+*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+logs/
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Model cache
+.cache/
+models/
+
+# Temporary Claude/Cursor files
+tmpclaude-*
+**/tmpclaude-*
+
+# Vite cache
+.vite/
+
+# Auxiliary docs – only code + README on GitHub
+WERYFIKACJA_PROJECT_CHARTER.md
+OCENA_PROJEKTU.md
+GITHUB_*.md
+AI_MODEL_INFO.md
+PRODUCTION_SETUP.md
+PROJECT_STRUCTURE.md
+QUICK_START.md
+REQUIREMENTS_CHECK.md
+SETUP_GUIDE.md
+USUN_PLIKI_POMOCNICZE.md
+extension/READY.md
+extension/UPDATE_EXTENSION.md

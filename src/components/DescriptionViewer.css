@@ -1,0 +1,19 @@
+.description-viewer {
+  width: 100%;
+}
+
+.description-viewer h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.description-text {
+  padding: 1rem;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  min-height: 100px;
+  line-height: 1.8;
+}
+

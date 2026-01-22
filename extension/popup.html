@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Describer</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div id="root">
+    <div class="extension-header">
+      <h1>Image Describer</h1>
+    </div>
+    <div class="extension-content">
+      <div id="upload-area" class="upload-area">
+        <p>Right-click on an image and select "Describe Image"</p>
+        <p>Or upload an image below:</p>
+        <input type="file" id="file-input" accept="image/*" />
+      </div>
+      <div id="description-area" class="description-area" style="display: none;">
+        <h2>Description</h2>
+        <div id="description-text" style="min-height: 50px; padding: 0.5rem; background: white; border: 1px solid #ccc; border-radius: 4px; margin: 0.5rem 0; word-wrap: break-word;"></div>
+        <button id="read-aloud-btn">🔊 Read Aloud</button>
+      </div>
+      <div id="error-area" class="error-area" style="display: none;"></div>
+      
+      <div id="history-section" class="history-section" style="display: none;">
+        <h3>History</h3>
+        <button id="load-history-btn" style="margin-bottom: 0.5rem; padding: 0.25rem 0.5rem; font-size: 0.875rem;">Refresh History</button>
+        <div id="history-list" class="history-list"></div>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
+

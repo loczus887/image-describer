@@ -1,0 +1,63 @@
+.image-uploader {
+  border: 2px dashed var(--border-color);
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  transition: border-color 0.3s, background-color 0.3s;
+  cursor: pointer;
+}
+
+.image-uploader:hover {
+  border-color: var(--accent-color);
+  background-color: var(--bg-secondary);
+}
+
+.upload-label {
+  display: block;
+  cursor: pointer;
+  width: 100%;
+}
+
+.upload-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.upload-icon {
+  font-size: 3rem;
+}
+
+.upload-hint {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid var(--border-color);
+  border-top-color: var(--accent-color);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.image-uploader:has(input:disabled) {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.loading-message {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
